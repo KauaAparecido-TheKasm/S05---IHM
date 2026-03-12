@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Meu Curriculo </title>
-        <link rel="stylesheet" href="https://rcmp-collab.github.io/S05-IHM/cadex.css"> <!-- Aqui faz o link para o arquivo do CSS  -->
+    <!-- <link rel="stylesheet" href="https://rcmp-collab.github.io/S05-IHM/cadex.css"> Aqui faz o link para o arquivo do CSS  -->
     
     <style> 
         
@@ -37,8 +37,32 @@
             <li class="destaque">JS</li>
         </ul>
 
-        <div>E-mail</div>
-        <div><p>WhatsApp</p></div>
- 
+        <div onclick='enviarEmail()'>E-mail</div>
+        <div id='ws'><p>WhatsApp</p></div>
+        <p id='msn'></p>    
+        <p id="p2"> Hello World</p>
+
+        <h1 id="id1"> My Heading 1 </h1>
+
+        <button type="button" onclick="document.getElementById('id1').style.color = 'red'"></button>
+
+
+        <script>
+            function enviarEmail(){
+                alert('kaua.aparecido@inatel.br');
+                document.getElementById('msn').innerHTML = 'Mensagem Enviada!';
+                document.getElementById('msn').style.color = "red";
+            }
+
+            document.getElementById('ws').addEventListener("click", function() {
+                document.getElementById('msn').style.color = "blue";
+            })
+
+            document.getElementById("p2").style.color = "blue";
+            
+        </script>
+
+        <script src="script.js"></script>
+
     </body>
 </html>
