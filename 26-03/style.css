@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Pegou os dois elementos da header e jogou um pro lado da tela e o outro pro outro canto*/
+    align-items: center;
+    background-color: red; /*colorindo o header*/
+    padding: 15px 30px;
+}
+
+#menu {
+    background-color: blue;
+    padding: 10px;
+}
+
+#perfil{
+    background-color: green;
+    padding: 10px;
+}
+
+main{
+    padding: 20px;
+}
+
+#user_name{/*sobre o nome do usuário*/
+    font-size: 20pt;
+    margin-bottom: 20pt;
+    font-weight: bold;
+}
+
+#mensagens{
+    display: grid;
+    gap: 15px;
+}
+
+.mns_box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: green;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.icon{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.mns{
+    line-height: 1.4;
+}

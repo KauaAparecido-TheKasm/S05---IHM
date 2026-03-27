@@ -31,10 +31,10 @@
         <h2 id="profissao"> Engenheiro de Software </h2> <!-- Isso é outro parágrafo -->
         <a href="https://inatel.br", target="_blank"> <p> Lindekin </p></a> <!--Novamente, outro parafgrafo porem com um link da tag 'a'--> <!--_blank abre uma nova pagina, self abre na mesma pagina-->
         <h3 class="competencias"> Competências </h3> <!--Mais um...-->
-        <ul> <!-- Lista não ordenada -->
+        <ul class='lista'> <!-- Lista não ordenada -->
             <li class="destaque">HTML</li> <!-- Listed Itens (LI) itens da lista-->
-            <li class="destaque">CSS</li>
-            <li class="destaque">JS</li>
+            <li >CSS</li>
+            <li >JS</li>
         </ul>
 
         <div onclick='enviarEmail()'>E-mail</div>
@@ -60,9 +60,18 @@
 
             document.getElementById("p2").style.color = "blue";
             
+            /* Aula do dia 19/03 */
+
+            let lista = document.querySelector('.lista');
+            let novoItem = document.createElement('li');
+            novoItem.textContent = "Framework";
+            novoItem.classList.add('destaque');
+            
+            lista.appendChild(novoItem);
+
         </script>
 
-        <script src="script.js"></script>
+        
 
     </body>
 </html>
