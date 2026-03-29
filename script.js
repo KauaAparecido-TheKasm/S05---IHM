@@ -86,7 +86,8 @@ for (let i = 0; i < cores.length; i++){
 */
 
 
-//Inicializa um objeto
+//Inicializa um objeto 
+/*
 let pessoa = {nome: "Kauã", idade: 19, cidade: "CDO "}
 
 for(let chave in pessoa){
@@ -97,5 +98,14 @@ for(let chave in pessoa){
 let frutas = ["Maçã", "Banana", "Pera"];
 
 for(let fruta of frutas){
-    console.log(fruta);
+    console.log(fruta); 
+}
+*/
+
+const numero = [1, 100, 10 ,5 , 25, 40];
+
+maiorNumero(numero);
+
+function maiorNumero(array){
+    console.log(Math.min.apply(null, array));
 }
